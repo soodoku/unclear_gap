@@ -1,0 +1,31 @@
+\documentclass[]{article}
+\setlength{\pdfpagewidth}{8.5in} \setlength{\pdfpageheight}{11in}
+\begin{document}
+\begin{tabular}{lcccc} \hline
+ & (1) & (2) & (3) & (4) \\
+ & full1 & full2 & full3 & full4 \\
+VARIABLES & unemploy & inflation & unemploy & inflation \\ \hline
+ &  &  &  &  \\
+1.out\_party\_treat &  &  & -0.125*** & -0.091*** \\
+ &  &  & (0.020) & (0.021) \\
+1.combined\_troll\_1 &  &  & 0.045** & -0.022 \\
+ &  &  & (0.022) & (0.024) \\
+0b.out\_party\_treat\#0b.combined\_troll\_1 &  &  & 0.000 & 0.000 \\
+ &  &  & (0.000) & (0.000) \\
+0b.out\_party\_treat\#1o.combined\_troll\_1 &  &  & 0.000 & 0.000 \\
+ &  &  & (0.000) & (0.000) \\
+1o.out\_party\_treat\#0b.combined\_troll\_1 &  &  & 0.000 & 0.000 \\
+ &  &  & (0.000) & (0.000) \\
+1.out\_party\_treat\#1.combined\_troll\_1 &  &  & 0.076** & 0.079** \\
+ &  &  & (0.031) & (0.033) \\
+out\_party\_treat & -0.096*** & -0.060*** &  &  \\
+ & (0.015) & (0.016) &  &  \\
+Constant & 0.793*** & 0.711*** & 0.775*** & 0.720*** \\
+ & (0.011) & (0.012) & (0.014) & (0.015) \\
+ &  &  &  &  \\
+Observations & 1,425 & 1,425 & 1,425 & 1,425 \\
+ R-squared & 0.027 & 0.010 & 0.050 & 0.014 \\ \hline
+\multicolumn{5}{c}{ Standard errors in parentheses} \\
+\multicolumn{5}{c}{ *** p$<$0.01, ** p$<$0.05, * p$<$0.1} \\
+\end{tabular}
+\end{document}

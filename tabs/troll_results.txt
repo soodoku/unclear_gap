@@ -1,0 +1,13 @@
+	(1)	(2)
+	troll1	troll2
+VARIABLES	unemploy	inflation
+		
+out_party_treat	-0.043*	-0.017
+	(0.026)	(0.028)
+Constant	0.819***	0.709***
+	(0.018)	(0.020)
+		
+Observations	445	445
+R-squared	0.006	0.001
+Standard errors in parentheses		
+*** p<0.01, ** p<0.05, * p<0.1		

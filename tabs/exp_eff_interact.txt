@@ -1,0 +1,23 @@
+	(1)	(2)
+	interact1	interact2
+VARIABLES	unemploy	inflation
+		
+1.out_party_treat	-0.125***	-0.091***
+	(0.020)	(0.021)
+1.combined_troll_1	0.045**	-0.022
+	(0.022)	(0.024)
+0b.out_party_treat#0b.combined_troll_1	0.000	0.000
+	(0.000)	(0.000)
+0b.out_party_treat#1o.combined_troll_1	0.000	0.000
+	(0.000)	(0.000)
+1o.out_party_treat#0b.combined_troll_1	0.000	0.000
+	(0.000)	(0.000)
+1.out_party_treat#1.combined_troll_1	0.076**	0.079**
+	(0.031)	(0.033)
+Constant	0.775***	0.720***
+	(0.014)	(0.015)
+		
+Observations	1,425	1,425
+R-squared	0.050	0.014
+Standard errors in parentheses		
+*** p<0.01, ** p<0.05, * p<0.1		

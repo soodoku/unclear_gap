@@ -1,0 +1,13 @@
+	(1)	(2)
+	hits1	hits2
+VARIABLES	unemploy	inflation
+		
+out_party_treat	-0.150***	-0.101***
+	(0.025)	(0.026)
+Constant	0.782***	0.743***
+	(0.018)	(0.019)
+		
+Observations	505	505
+R-squared	0.068	0.029
+Standard errors in parentheses		
+*** p<0.01, ** p<0.05, * p<0.1		

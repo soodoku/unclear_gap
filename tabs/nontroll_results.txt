@@ -1,0 +1,13 @@
+	(1)	(2)
+	nontroll1	nontroll2
+VARIABLES	unemploy	inflation
+		
+out_party_treat	-0.125***	-0.091***
+	(0.020)	(0.021)
+Constant	0.775***	0.720***
+	(0.015)	(0.015)
+		
+Observations	861	861
+R-squared	0.043	0.022
+Standard errors in parentheses		
+*** p<0.01, ** p<0.05, * p<0.1		

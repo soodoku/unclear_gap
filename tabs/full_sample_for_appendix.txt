@@ -1,0 +1,25 @@
+	(1)	(2)	(3)	(4)
+	full1	full2	full3	full4
+VARIABLES	unemploy	inflation	unemploy	unemploy
+				
+1.out_party_treat			-0.125***	-0.125***
+			(0.020)	(0.020)
+1.combined_troll_1			0.045**	0.045**
+			(0.022)	(0.022)
+0b.out_party_treat#0b.combined_troll_1			0.000	0.000
+			(0.000)	(0.000)
+0b.out_party_treat#1o.combined_troll_1			0.000	0.000
+			(0.000)	(0.000)
+1o.out_party_treat#0b.combined_troll_1			0.000	0.000
+			(0.000)	(0.000)
+1.out_party_treat#1.combined_troll_1			0.076**	0.076**
+			(0.031)	(0.031)
+out_party_treat	-0.096***	-0.060***		
+	(0.015)	(0.016)		
+Constant	0.793***	0.711***	0.775***	0.775***
+	(0.011)	(0.012)	(0.014)	(0.014)
+				
+Observations	1,425	1,425	1,425	1,425
+R-squared	0.027	0.010	0.050	0.050
+Standard errors in parentheses				
+*** p<0.01, ** p<0.05, * p<0.1				

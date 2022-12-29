@@ -1,0 +1,13 @@
+	(1)	(2)
+	flagged1	flagged2
+VARIABLES	unemploy	inflation
+		
+out_party_treat	-0.049**	-0.013
+	(0.023)	(0.026)
+Constant	0.820***	0.698***
+	(0.017)	(0.018)
+		
+Observations	564	564
+R-squared	0.008	0.000
+Standard errors in parentheses		
+*** p<0.01, ** p<0.05, * p<0.1		

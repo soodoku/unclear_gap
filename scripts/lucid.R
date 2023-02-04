@@ -49,7 +49,8 @@ fin_dat <- fin_dat %>%
 ### Analysis
 
 fin_dat %>% 
-  group_by(econ_cond) %>%
+  filter(pid3 != "ind") %>%
+  group_by(econ_cong) %>%
   summarize(unemp_better = mean(unemp_got_better), infl_better = mean(infl_got_better))
 
 

@@ -81,7 +81,7 @@ fin_dat <- fin_dat %>%
 
 lucid_out <- fin_dat %>% 
   filter(pid3 != "ind") %>%
-  group_by(econ_cong) %>%
+  group_by(econ_uncong) %>%
   summarize(unemp_better = mean(unemp_got_better), 
             se_uemp = sqrt(unemp_better*(1- unemp_better)/n()),
             infl_better = mean(infl_got_better),
@@ -89,22 +89,22 @@ lucid_out <- fin_dat %>%
 
 kable(lucid_out, digits = 3)
 
-summary(lm(unemp_got_better ~ econ_cong, data = fin_dat[fin_dat$pid3 != "ind", ]))
-summary(lm(infl_got_better ~ econ_cong, data = fin_dat[fin_dat$pid3 != "ind", ]))
+summary(lm(unemp_got_better ~ econ_uncong, data = fin_dat[fin_dat$pid3 != "ind", ]))
+summary(lm(infl_got_better ~ econ_uncong, data = fin_dat[fin_dat$pid3 != "ind", ]))
 
 # Commensurate to Turk
-unemp_mod <- lm(unemp_n ~ econ_cong, data = fin_dat[fin_dat$pid3 != "ind", ])
-infl_mod  <- lm(infl_n ~ econ_cong, data = fin_dat[fin_dat$pid3 != "ind", ])
+unemp_mod <- lm(unemp_n ~ econ_uncong, data = fin_dat[fin_dat$pid3 != "ind", ])
+infl_mod  <- lm(infl_n ~ econ_uncong, data = fin_dat[fin_dat$pid3 != "ind", ])
 
 # Let's do a joint
 long_data <- fin_dat %>%
   filter(fin_dat$pid3 != "ind") %>%
-  select(unemp_n, infl_n, econ_cong, rid) %>%
-  pivot_longer(cols = - c(rid, econ_cong),
+  select(unemp_n, infl_n, econ_uncong, rid) %>%
+  pivot_longer(cols = - c(rid, econ_uncong),
                names_to = "variable",
                values_to = "measure")
 
-agg_mod <- with(long_data, lmer(measure ~ econ_cong + (1|rid)))
+agg_mod <- with(long_data, lmer(measure ~ econ_uncong + (1|rid)))
 
 library(stats)
 

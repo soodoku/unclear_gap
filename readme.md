@@ -6,7 +6,7 @@ Roush and Sood (2023) use a dataset of 162,083 responses to 187 items on 47 surv
 
 * In 2016, inflation also decreased from 2.1\% to 1.9\%, a change of 0.2 percentage points. How would you interpret this change? Would you say that inflation got better, stayed about the same, or got worse?
 
-We find that significantly fewer partisans pick the option that '[things] got better' when presented with an out-partisan cue than a co-partisan cue. Our findings suggest that vague options can induce knowledge gaps where none exist.
+We find that significantly fewer partisans pick the option that '[things] got better' when presented with an out-partisan cue than a co-partisan cue. Our findings suggest that vague options can induce knowledge gaps even when partisans have the same information.
 
 ## Materials
 

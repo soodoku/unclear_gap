@@ -106,8 +106,6 @@ long_data <- fin_dat %>%
 
 agg_mod <- with(long_data, lmer(measure ~ econ_uncong + (1|rid)))
 
-library(stats)
-
 stargazer(unemp_mod, infl_mod, #agg_mod, 
           dep.var.labels = c("Unemployment", "Inflation"), # "Aggregate"),
           covariate.labels = "Out-party cue",

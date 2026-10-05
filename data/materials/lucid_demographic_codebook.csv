@@ -17,22 +17,22 @@ education,8,Doctorate degree
 education,-3105,None of the above
 ,,
 What is your race?,,
-ethnicity,1,White 
+ethnicity,1,White
 ethnicity,2,"Black, or African American"
-ethnicity,3,American Indian or Alaska Native 
-ethnicity,4,Asian *** Asian Indian 
-ethnicity,5,Asian *** Chinese 
-ethnicity,6,Asian *** Filipino 
-ethnicity,7,Asian *** Japanese 
-ethnicity,8,Asian *** Korean 
-ethnicity,9,Asian *** Vietnamese 
-ethnicity,10,Asian *** Other 
-ethnicity,11,Pacific Islander *** Native Hawaiian 
-ethnicity,12,Pacific Islander *** Guamanian 
-ethnicity,13,Pacific Islander *** Samoan 
+ethnicity,3,American Indian or Alaska Native
+ethnicity,4,Asian *** Asian Indian
+ethnicity,5,Asian *** Chinese
+ethnicity,6,Asian *** Filipino
+ethnicity,7,Asian *** Japanese
+ethnicity,8,Asian *** Korean
+ethnicity,9,Asian *** Vietnamese
+ethnicity,10,Asian *** Other
+ethnicity,11,Pacific Islander *** Native Hawaiian
+ethnicity,12,Pacific Islander *** Guamanian
+ethnicity,13,Pacific Islander *** Samoan
 ethnicity,14,Pacific Islander *** Other Pacific Islander
-ethnicity,15,Some other race 
-ethnicity,16,Prefer not to answer 
+ethnicity,15,Some other race
+ethnicity,16,Prefer not to answer
 ,,
 "Are you Hispanic, Latino, or Spanish Origin",,
 hispanic,1,"No , not of Hispanic, Latino, or Spanish origin"

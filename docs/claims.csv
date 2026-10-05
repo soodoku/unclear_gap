@@ -1,0 +1,8 @@
+claim,estimand,universe,producer,artifact,consumer,qualification
+Cue affects evaluations,within-party opposing minus own score,full eligible partisans,scripts/run_all.R,tabs/primary.csv,abstract and main table,Lucid unemployment CI includes zero
+Better response changes,within-party opposing minus own percent better,full eligible partisans,scripts/run_all.R,tabs/effects.csv,binary table,secondary unadjusted intervals
+Screened estimates are larger,same score contrast within each sample,screen passed and full,scripts/run_all.R,tabs/effects.csv,figure and sensitivity table,MTurk screen post-treatment
+Party-specific effects,opposing minus own within respondent party,full eligible partisans,scripts/run_all.R,tabs/effects.csv,party appendix,party membership is not randomized
+IP sensitivity,same contrast with clustered variance,full eligible partisans,R/analysis.R,tabs/clusters.csv,results,shared address is not a duplicate person
+No single record reverses sign,fixed-share leave-one-out range,full eligible partisans,R/analysis.R,tabs/influence.csv,results,diagnostic only
+Vagueness effect unidentified,no randomized format contrast,both experiments,data/materials/,questionnaire text,abstract and discussion,mechanism not estimated

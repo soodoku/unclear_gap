@@ -1,0 +1,193 @@
+"study","sample","party","out","outcome","response","n","total","percent"
+"MTurk","Full","Democrat",0,"unemployment","better",203,331,61.3293051359517
+"MTurk","Full","Democrat",0,"unemployment","same",119,331,35.9516616314199
+"MTurk","Full","Democrat",0,"unemployment","worse",9,331,2.7190332326284
+"MTurk","Full","Democrat",0,"inflation","better",160,331,48.3383685800604
+"MTurk","Full","Democrat",0,"inflation","same",153,331,46.2235649546828
+"MTurk","Full","Democrat",0,"inflation","worse",18,331,5.43806646525679
+"MTurk","Full","Democrat",1,"unemployment","better",157,385,40.7792207792208
+"MTurk","Full","Democrat",1,"unemployment","same",195,385,50.6493506493506
+"MTurk","Full","Democrat",1,"unemployment","worse",33,385,8.57142857142857
+"MTurk","Full","Democrat",1,"inflation","better",141,385,36.6233766233766
+"MTurk","Full","Democrat",1,"inflation","same",206,385,53.5064935064935
+"MTurk","Full","Democrat",1,"inflation","worse",38,385,9.87012987012988
+"MTurk","Full","Republican",0,"unemployment","better",224,358,62.5698324022346
+"MTurk","Full","Republican",0,"unemployment","same",120,358,33.5195530726257
+"MTurk","Full","Republican",0,"unemployment","worse",14,358,3.91061452513966
+"MTurk","Full","Republican",0,"inflation","better",173,358,48.3240223463687
+"MTurk","Full","Republican",0,"inflation","same",161,358,44.9720670391061
+"MTurk","Full","Republican",0,"inflation","worse",24,358,6.70391061452514
+"MTurk","Full","Republican",1,"unemployment","better",180,351,51.2820512820513
+"MTurk","Full","Republican",1,"unemployment","same",157,351,44.7293447293447
+"MTurk","Full","Republican",1,"unemployment","worse",14,351,3.98860398860399
+"MTurk","Full","Republican",1,"inflation","better",146,351,41.5954415954416
+"MTurk","Full","Republican",1,"inflation","same",178,351,50.7122507122507
+"MTurk","Full","Republican",1,"inflation","worse",27,351,7.6923076923077
+"MTurk","Screen passed","Democrat",0,"unemployment","better",117,207,56.5217391304348
+"MTurk","Screen passed","Democrat",0,"unemployment","same",83,207,40.0966183574879
+"MTurk","Screen passed","Democrat",0,"unemployment","worse",7,207,3.3816425120773
+"MTurk","Screen passed","Democrat",0,"inflation","better",109,207,52.6570048309179
+"MTurk","Screen passed","Democrat",0,"inflation","same",86,207,41.5458937198068
+"MTurk","Screen passed","Democrat",0,"inflation","worse",12,207,5.79710144927536
+"MTurk","Screen passed","Democrat",1,"unemployment","better",89,264,33.7121212121212
+"MTurk","Screen passed","Democrat",1,"unemployment","same",150,264,56.8181818181818
+"MTurk","Screen passed","Democrat",1,"unemployment","worse",25,264,9.46969696969697
+"MTurk","Screen passed","Democrat",1,"inflation","better",92,264,34.8484848484848
+"MTurk","Screen passed","Democrat",1,"inflation","same",148,264,56.0606060606061
+"MTurk","Screen passed","Democrat",1,"inflation","worse",24,264,9.09090909090909
+"MTurk","Screen passed","Republican",0,"unemployment","better",126,204,61.764705882353
+"MTurk","Screen passed","Republican",0,"unemployment","same",68,204,33.3333333333333
+"MTurk","Screen passed","Republican",0,"unemployment","worse",10,204,4.90196078431373
+"MTurk","Screen passed","Republican",0,"inflation","better",99,204,48.5294117647059
+"MTurk","Screen passed","Republican",0,"inflation","same",90,204,44.1176470588235
+"MTurk","Screen passed","Republican",0,"inflation","worse",15,204,7.35294117647059
+"MTurk","Screen passed","Republican",1,"unemployment","better",80,186,43.010752688172
+"MTurk","Screen passed","Republican",1,"unemployment","same",97,186,52.1505376344086
+"MTurk","Screen passed","Republican",1,"unemployment","worse",9,186,4.83870967741935
+"MTurk","Screen passed","Republican",1,"inflation","better",64,186,34.4086021505376
+"MTurk","Screen passed","Republican",1,"inflation","same",106,186,56.989247311828
+"MTurk","Screen passed","Republican",1,"inflation","worse",16,186,8.60215053763441
+"MTurk","Screen flagged","Democrat",0,"unemployment","better",86,124,69.3548387096774
+"MTurk","Screen flagged","Democrat",0,"unemployment","same",36,124,29.0322580645161
+"MTurk","Screen flagged","Democrat",0,"unemployment","worse",2,124,1.61290322580645
+"MTurk","Screen flagged","Democrat",0,"inflation","better",51,124,41.1290322580645
+"MTurk","Screen flagged","Democrat",0,"inflation","same",67,124,54.0322580645161
+"MTurk","Screen flagged","Democrat",0,"inflation","worse",6,124,4.83870967741935
+"MTurk","Screen flagged","Democrat",1,"unemployment","better",68,121,56.198347107438
+"MTurk","Screen flagged","Democrat",1,"unemployment","same",45,121,37.1900826446281
+"MTurk","Screen flagged","Democrat",1,"unemployment","worse",8,121,6.61157024793388
+"MTurk","Screen flagged","Democrat",1,"inflation","better",49,121,40.495867768595
+"MTurk","Screen flagged","Democrat",1,"inflation","same",58,121,47.9338842975207
+"MTurk","Screen flagged","Democrat",1,"inflation","worse",14,121,11.5702479338843
+"MTurk","Screen flagged","Republican",0,"unemployment","better",98,154,63.6363636363636
+"MTurk","Screen flagged","Republican",0,"unemployment","same",52,154,33.7662337662338
+"MTurk","Screen flagged","Republican",0,"unemployment","worse",4,154,2.5974025974026
+"MTurk","Screen flagged","Republican",0,"inflation","better",74,154,48.0519480519481
+"MTurk","Screen flagged","Republican",0,"inflation","same",71,154,46.1038961038961
+"MTurk","Screen flagged","Republican",0,"inflation","worse",9,154,5.84415584415585
+"MTurk","Screen flagged","Republican",1,"unemployment","better",100,165,60.6060606060606
+"MTurk","Screen flagged","Republican",1,"unemployment","same",60,165,36.3636363636364
+"MTurk","Screen flagged","Republican",1,"unemployment","worse",5,165,3.03030303030303
+"MTurk","Screen flagged","Republican",1,"inflation","better",82,165,49.6969696969697
+"MTurk","Screen flagged","Republican",1,"inflation","same",72,165,43.6363636363636
+"MTurk","Screen flagged","Republican",1,"inflation","worse",11,165,6.66666666666667
+"MTurk","Strict identifiers","Democrat",0,"unemployment","better",180,292,61.6438356164384
+"MTurk","Strict identifiers","Democrat",0,"unemployment","same",104,292,35.6164383561644
+"MTurk","Strict identifiers","Democrat",0,"unemployment","worse",8,292,2.73972602739726
+"MTurk","Strict identifiers","Democrat",0,"inflation","better",141,292,48.2876712328767
+"MTurk","Strict identifiers","Democrat",0,"inflation","same",134,292,45.8904109589041
+"MTurk","Strict identifiers","Democrat",0,"inflation","worse",17,292,5.82191780821918
+"MTurk","Strict identifiers","Democrat",1,"unemployment","better",138,332,41.5662650602409
+"MTurk","Strict identifiers","Democrat",1,"unemployment","same",162,332,48.7951807228916
+"MTurk","Strict identifiers","Democrat",1,"unemployment","worse",32,332,9.63855421686747
+"MTurk","Strict identifiers","Democrat",1,"inflation","better",121,332,36.4457831325301
+"MTurk","Strict identifiers","Democrat",1,"inflation","same",179,332,53.9156626506024
+"MTurk","Strict identifiers","Democrat",1,"inflation","worse",32,332,9.63855421686747
+"MTurk","Strict identifiers","Republican",0,"unemployment","better",195,312,62.5
+"MTurk","Strict identifiers","Republican",0,"unemployment","same",106,312,33.974358974359
+"MTurk","Strict identifiers","Republican",0,"unemployment","worse",11,312,3.52564102564103
+"MTurk","Strict identifiers","Republican",0,"inflation","better",152,312,48.7179487179487
+"MTurk","Strict identifiers","Republican",0,"inflation","same",141,312,45.1923076923077
+"MTurk","Strict identifiers","Republican",0,"inflation","worse",19,312,6.08974358974359
+"MTurk","Strict identifiers","Republican",1,"unemployment","better",167,322,51.8633540372671
+"MTurk","Strict identifiers","Republican",1,"unemployment","same",141,322,43.7888198757764
+"MTurk","Strict identifiers","Republican",1,"unemployment","worse",14,322,4.34782608695652
+"MTurk","Strict identifiers","Republican",1,"inflation","better",137,322,42.5465838509317
+"MTurk","Strict identifiers","Republican",1,"inflation","same",158,322,49.0683229813665
+"MTurk","Strict identifiers","Republican",1,"inflation","worse",27,322,8.38509316770186
+"Lucid","Full","Democrat",0,"unemployment","better",114,200,57
+"Lucid","Full","Democrat",0,"unemployment","same",70,200,35
+"Lucid","Full","Democrat",0,"unemployment","worse",16,200,8
+"Lucid","Full","Democrat",0,"inflation","better",122,200,61
+"Lucid","Full","Democrat",0,"inflation","same",64,200,32
+"Lucid","Full","Democrat",0,"inflation","worse",14,200,7
+"Lucid","Full","Democrat",1,"unemployment","better",80,164,48.780487804878
+"Lucid","Full","Democrat",1,"unemployment","same",66,164,40.2439024390244
+"Lucid","Full","Democrat",1,"unemployment","worse",18,164,10.9756097560976
+"Lucid","Full","Democrat",1,"inflation","better",83,164,50.609756097561
+"Lucid","Full","Democrat",1,"inflation","same",57,164,34.7560975609756
+"Lucid","Full","Democrat",1,"inflation","worse",24,164,14.6341463414634
+"Lucid","Full","Republican",0,"unemployment","better",72,138,52.1739130434783
+"Lucid","Full","Republican",0,"unemployment","same",52,138,37.6811594202899
+"Lucid","Full","Republican",0,"unemployment","worse",14,138,10.1449275362319
+"Lucid","Full","Republican",0,"inflation","better",79,138,57.2463768115942
+"Lucid","Full","Republican",0,"inflation","same",42,138,30.4347826086957
+"Lucid","Full","Republican",0,"inflation","worse",17,138,12.3188405797101
+"Lucid","Full","Republican",1,"unemployment","better",60,122,49.1803278688525
+"Lucid","Full","Republican",1,"unemployment","same",42,122,34.4262295081967
+"Lucid","Full","Republican",1,"unemployment","worse",20,122,16.3934426229508
+"Lucid","Full","Republican",1,"inflation","better",57,122,46.7213114754098
+"Lucid","Full","Republican",1,"inflation","same",43,122,35.2459016393443
+"Lucid","Full","Republican",1,"inflation","worse",22,122,18.0327868852459
+"Lucid","Screen passed","Democrat",0,"unemployment","better",102,168,60.7142857142857
+"Lucid","Screen passed","Democrat",0,"unemployment","same",53,168,31.547619047619
+"Lucid","Screen passed","Democrat",0,"unemployment","worse",13,168,7.73809523809524
+"Lucid","Screen passed","Democrat",0,"inflation","better",107,168,63.6904761904762
+"Lucid","Screen passed","Democrat",0,"inflation","same",50,168,29.7619047619048
+"Lucid","Screen passed","Democrat",0,"inflation","worse",11,168,6.54761904761905
+"Lucid","Screen passed","Democrat",1,"unemployment","better",68,141,48.2269503546099
+"Lucid","Screen passed","Democrat",1,"unemployment","same",55,141,39.0070921985816
+"Lucid","Screen passed","Democrat",1,"unemployment","worse",18,141,12.7659574468085
+"Lucid","Screen passed","Democrat",1,"inflation","better",73,141,51.7730496453901
+"Lucid","Screen passed","Democrat",1,"inflation","same",46,141,32.6241134751773
+"Lucid","Screen passed","Democrat",1,"inflation","worse",22,141,15.6028368794326
+"Lucid","Screen passed","Republican",0,"unemployment","better",62,116,53.448275862069
+"Lucid","Screen passed","Republican",0,"unemployment","same",40,116,34.4827586206897
+"Lucid","Screen passed","Republican",0,"unemployment","worse",14,116,12.0689655172414
+"Lucid","Screen passed","Republican",0,"inflation","better",71,116,61.2068965517241
+"Lucid","Screen passed","Republican",0,"inflation","same",32,116,27.5862068965517
+"Lucid","Screen passed","Republican",0,"inflation","worse",13,116,11.2068965517241
+"Lucid","Screen passed","Republican",1,"unemployment","better",51,104,49.0384615384615
+"Lucid","Screen passed","Republican",1,"unemployment","same",35,104,33.6538461538461
+"Lucid","Screen passed","Republican",1,"unemployment","worse",18,104,17.3076923076923
+"Lucid","Screen passed","Republican",1,"inflation","better",51,104,49.0384615384615
+"Lucid","Screen passed","Republican",1,"inflation","same",34,104,32.6923076923077
+"Lucid","Screen passed","Republican",1,"inflation","worse",19,104,18.2692307692308
+"Lucid","Screen flagged","Democrat",0,"unemployment","better",12,32,37.5
+"Lucid","Screen flagged","Democrat",0,"unemployment","same",17,32,53.125
+"Lucid","Screen flagged","Democrat",0,"unemployment","worse",3,32,9.375
+"Lucid","Screen flagged","Democrat",0,"inflation","better",15,32,46.875
+"Lucid","Screen flagged","Democrat",0,"inflation","same",14,32,43.75
+"Lucid","Screen flagged","Democrat",0,"inflation","worse",3,32,9.375
+"Lucid","Screen flagged","Democrat",1,"unemployment","better",12,23,52.1739130434783
+"Lucid","Screen flagged","Democrat",1,"unemployment","same",11,23,47.8260869565217
+"Lucid","Screen flagged","Democrat",1,"unemployment","worse",0,23,0
+"Lucid","Screen flagged","Democrat",1,"inflation","better",10,23,43.4782608695652
+"Lucid","Screen flagged","Democrat",1,"inflation","same",11,23,47.8260869565217
+"Lucid","Screen flagged","Democrat",1,"inflation","worse",2,23,8.69565217391304
+"Lucid","Screen flagged","Republican",0,"unemployment","better",10,22,45.4545454545455
+"Lucid","Screen flagged","Republican",0,"unemployment","same",12,22,54.5454545454545
+"Lucid","Screen flagged","Republican",0,"unemployment","worse",0,22,0
+"Lucid","Screen flagged","Republican",0,"inflation","better",8,22,36.3636363636364
+"Lucid","Screen flagged","Republican",0,"inflation","same",10,22,45.4545454545455
+"Lucid","Screen flagged","Republican",0,"inflation","worse",4,22,18.1818181818182
+"Lucid","Screen flagged","Republican",1,"unemployment","better",9,18,50
+"Lucid","Screen flagged","Republican",1,"unemployment","same",7,18,38.8888888888889
+"Lucid","Screen flagged","Republican",1,"unemployment","worse",2,18,11.1111111111111
+"Lucid","Screen flagged","Republican",1,"inflation","better",6,18,33.3333333333333
+"Lucid","Screen flagged","Republican",1,"inflation","same",9,18,50
+"Lucid","Screen flagged","Republican",1,"inflation","worse",3,18,16.6666666666667
+"Lucid","Strict identifiers","Democrat",0,"unemployment","better",97,163,59.5092024539877
+"Lucid","Strict identifiers","Democrat",0,"unemployment","same",56,163,34.3558282208589
+"Lucid","Strict identifiers","Democrat",0,"unemployment","worse",10,163,6.13496932515337
+"Lucid","Strict identifiers","Democrat",0,"inflation","better",105,163,64.4171779141104
+"Lucid","Strict identifiers","Democrat",0,"inflation","same",46,163,28.2208588957055
+"Lucid","Strict identifiers","Democrat",0,"inflation","worse",12,163,7.36196319018405
+"Lucid","Strict identifiers","Democrat",1,"unemployment","better",68,133,51.1278195488722
+"Lucid","Strict identifiers","Democrat",1,"unemployment","same",50,133,37.593984962406
+"Lucid","Strict identifiers","Democrat",1,"unemployment","worse",15,133,11.2781954887218
+"Lucid","Strict identifiers","Democrat",1,"inflation","better",68,133,51.1278195488722
+"Lucid","Strict identifiers","Democrat",1,"inflation","same",47,133,35.3383458646617
+"Lucid","Strict identifiers","Democrat",1,"inflation","worse",18,133,13.5338345864662
+"Lucid","Strict identifiers","Republican",0,"unemployment","better",53,90,58.8888888888889
+"Lucid","Strict identifiers","Republican",0,"unemployment","same",27,90,30
+"Lucid","Strict identifiers","Republican",0,"unemployment","worse",10,90,11.1111111111111
+"Lucid","Strict identifiers","Republican",0,"inflation","better",55,90,61.1111111111111
+"Lucid","Strict identifiers","Republican",0,"inflation","same",25,90,27.7777777777778
+"Lucid","Strict identifiers","Republican",0,"inflation","worse",10,90,11.1111111111111
+"Lucid","Strict identifiers","Republican",1,"unemployment","better",38,81,46.9135802469136
+"Lucid","Strict identifiers","Republican",1,"unemployment","same",27,81,33.3333333333333
+"Lucid","Strict identifiers","Republican",1,"unemployment","worse",16,81,19.7530864197531
+"Lucid","Strict identifiers","Republican",1,"inflation","better",39,81,48.1481481481481
+"Lucid","Strict identifiers","Republican",1,"inflation","same",29,81,35.8024691358025
+"Lucid","Strict identifiers","Republican",1,"inflation","worse",13,81,16.0493827160494

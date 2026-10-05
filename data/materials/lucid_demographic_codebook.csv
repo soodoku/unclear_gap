@@ -1,0 +1,98 @@
+question,value,demographic
+What is your Age?,Only Numeric response is allowed,
+,,
+What is your gender?,,
+Gender,1,Male
+Gender,2,Female
+,,
+What is the highest level of education you have completed?,,
+education,1,Some high school or less
+education,2,High school graduate
+education,3,Other post high school vocational training
+education,4,"Completed some college, but no degree"
+education,5,Associate's degree
+education,6,Bachelor's degree
+education,7,Master's or professional degree
+education,8,Doctorate degree
+education,-3105,None of the above
+,,
+What is your race?,,
+ethnicity,1,White 
+ethnicity,2,"Black, or African American"
+ethnicity,3,American Indian or Alaska Native 
+ethnicity,4,Asian *** Asian Indian 
+ethnicity,5,Asian *** Chinese 
+ethnicity,6,Asian *** Filipino 
+ethnicity,7,Asian *** Japanese 
+ethnicity,8,Asian *** Korean 
+ethnicity,9,Asian *** Vietnamese 
+ethnicity,10,Asian *** Other 
+ethnicity,11,Pacific Islander *** Native Hawaiian 
+ethnicity,12,Pacific Islander *** Guamanian 
+ethnicity,13,Pacific Islander *** Samoan 
+ethnicity,14,Pacific Islander *** Other Pacific Islander
+ethnicity,15,Some other race 
+ethnicity,16,Prefer not to answer 
+,,
+"Are you Hispanic, Latino, or Spanish Origin",,
+hispanic,1,"No , not of Hispanic, Latino, or Spanish origin"
+hispanic,2,"Yes, Mexican, Mexican American, Chicano"
+hispanic,3,"Yes, Cuban"
+hispanic,4,"Yes, another Hispanic, Latino, or Spanish origin *** Argentina "
+hispanic,5,"Yes, another Hispanic, Latino, or Spanish origin *** Colombia "
+hispanic,6,"Yes, another Hispanic, Latino, or Spanish origin *** Ecuador "
+hispanic,7,"Yes, another Hispanic, Latino, or Spanish origin *** El Salvadore "
+hispanic,8,"Yes, another Hispanic, Latino, or Spanish origin *** Guatemala "
+hispanic,9,"Yes, another Hispanic, Latino, or Spanish origin *** Nicaragua "
+hispanic,10,"Yes, another Hispanic, Latino, or Spanish origin *** Panama "
+hispanic,11,"Yes, another Hispanic, Latino, or Spanish origin *** Peru "
+hispanic,12,"Yes, another Hispanic, Latino, or Spanish origin *** Spain "
+hispanic,13,"Yes, another Hispanic, Latino, or Spanish origin *** Venezuela "
+hispanic,14,"Yes, another Hispanic, Latino, or Spanish origin *** Other Country"
+hispanic,15,Prefer not to answer
+,,
+What is your current Annual household income before taxes?,,
+hhi,1,"Less than $14,999"
+hhi,2,"$15,000 to $19,999"
+hhi,3,"$20,000 to $24,999"
+hhi,4,"$25,000 to $29,999"
+hhi,5," $30,000 to $34,999"
+hhi,6," $35,000 to $39,999"
+hhi,7,"$40,000 to $44,999"
+hhi,8,"$45,000 to $49,999"
+hhi,9," $50,000 to $54,999"
+hhi,10," $55,000 to $59,999"
+hhi,11,"$60,000 to $64,999"
+hhi,12," $65,000 to $69,999"
+hhi,13,"$70,000 to $74,999"
+hhi,14,"$75,000 to $79,999"
+hhi,15,"$80,000 to $84,999"
+hhi,16,"$85,000 to $89,999"
+hhi,17,"$90,000 to $94,999"
+hhi,18,"$95,000 to $99,999"
+hhi,19,"$100,000 to $124,999"
+hhi,20,"$125,000 to $149,999"
+hhi,21,"$150,000 to $174,999"
+hhi,22,"$175,000 to $199,999"
+hhi,23," $200,000 to $249,999"
+hhi,24,"$250,000 and above"
+hhi,-3105,Prefer not to answer
+,,
+"Generally Speaking, do you usually think yourself as a Republican, a Democrat, an Independent, or what?",,
+political_party,1,Strong Democrat
+political_party,2,Not very strong Democrat
+political_party,3,Independent Democrat
+political_party,4,Independent - neither
+political_party,5,Independent Republican
+political_party,6,Other - leaning Democrat
+political_party,7,Other - neither
+political_party,8,Other - leaning Republican
+political_party,9,Not very strong Republican
+political_party,10,Strong Republican
+,,
+"For Region, ZIP is asked which is automatically mapped to the Region",,
+What is your ZIP Code?,,
+region,1,Northeast
+region,2,Midwest
+region,3,South
+region,4,West

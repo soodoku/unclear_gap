@@ -1,0 +1,13 @@
+# Validation
+
+Run `make restore` and `make check` from the repository root. The build uses R, renv, XeLaTeX, BibTeX, and latexmk. Generated figures and manuscript tables consume the same estimates as the README. No private data, Stata, Word, or Docker is required for reproduction.
+
+The raw-to-public audit matches unique MTurk response IDs one-to-one and verifies identical core responses in the raw and merged sources. Public extracts retain all source records and use explicit consent, preview, assignment, and party rules. Numeric-only extraction, source hashes, routing checks, allowed response codes, complete eligible outcomes, and source row counts are checked in code. The original source files are separately retained and hash-verified locally.
+
+Tests cover source sample sizes and screens, provider party codes, score endpoints and invalid codes, both Lucid response arms, agreement of standardized estimates and variances with saturated HC2 regressions, IP-cluster contrast identity, original screened score contrasts reconstructed independently, within-person covariance, category totals, deterministic permutations, and deletion diagnostics.
+
+Mechanical data audits of both public extracts found no duplicate record keys, datatype errors, or hard failures. Their arm-dependent missingness alerts reflect questionnaire routing: unassigned outcomes must be missing. The two-column treatment classification is not a two-cluster sampling design; generic few-group warnings do not apply to individual randomization. Anonymous IP groups are separately analyzed. Missing raw screen components are not counted as positive flags, and complete outcomes are verified after routing and eligibility.
+
+Primary uncertainty uses independent cell variances with Welch–Satterthwaite degrees of freedom. HC2 regression agreement provides an independent implementation check. Four primary study-item score tests receive Holm adjustment; other analyses are secondary. Demographic and screening diagnostics are released without using their significance to choose the estimator. No assignment log, preregistration, response-format manipulation, or direct comprehension measure was available.
+
+`docs/claims.csv` maps claims to estimates and qualifications. Empirical manuscript numbers enter through generated macros and tables. Deliberate numeric literals are questionnaire values/codes, field dates/payment, the release date, inferential conventions, and the cited BLS historical series; these are not hand-maintained estimates. Bibliography metadata was checked against publisher and BLS sources. The manuscript is compiled and every rendered page inspected before release.

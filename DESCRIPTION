@@ -1,0 +1,21 @@
+Package: uncleargap
+Type: Project
+Title: An Unclear Gap: Partisan Cues and Evaluations of the Same Economic Information
+Version: 0.1.0
+Authors@R: c(
+    person("Carolyn E.", "Roush", role = "aut"),
+    person("Gaurav", "Sood", role = c("aut", "cre"), email = "gsood07@gmail.com"))
+Description: Reproducible analysis of partisan cues and economic evaluations in
+    two survey experiments, with validated response coding, uncertainty estimates,
+    original question wording, and a generated research note.
+Encoding: UTF-8
+Imports:
+    digest,
+    ggplot2,
+    sandwich
+Suggests:
+    lintr,
+    renv,
+    styler,
+    testthat
+Config/testthat/edition: 3

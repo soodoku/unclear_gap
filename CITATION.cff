@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Please cite the research note when using these materials."
+type: dataset
+title: "An Unclear Gap: Partisan Cues and Evaluations of the Same Economic Information"
+authors:
+  - family-names: Roush
+    given-names: Carolyn E.
+  - family-names: Sood
+    given-names: Gaurav
+repository-code: "https://github.com/soodoku/unclear_gap"
+url: "https://github.com/soodoku/unclear_gap"
+version: 0.1.0
+date-released: 2026-10-04
+preferred-citation:
+  type: report
+  title: "An Unclear Gap: Partisan Cues and Evaluations of the Same Economic Information"
+  authors:
+    - family-names: Roush
+      given-names: Carolyn E.
+    - family-names: Sood
+      given-names: Gaurav
+  year: 2026
+  url: "https://github.com/soodoku/unclear_gap/blob/main/ms/main.pdf"

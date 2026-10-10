@@ -9,8 +9,8 @@ authors:
     given-names: Gaurav
 repository-code: "https://github.com/finite-sample/unclear_gap"
 url: "https://github.com/finite-sample/unclear_gap"
-version: 0.1.0
-date-released: "2026-10-04"
+version: 0.2.0
+date-released: "2026-10-09"
 preferred-citation:
   type: report
   title: "An Unclear Gap: Partisan Cues and Evaluations of the Same Economic Information"

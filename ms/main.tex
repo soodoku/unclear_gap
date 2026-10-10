@@ -9,6 +9,7 @@
 \setstretch{1.12}
 \setlength{\emergencystretch}{2em}
 \input{../tabs/macros.tex}
+\input{../tabs/style.tex}
 \makeatletter\let\inputtable\@@input\makeatother
 \title{An Unclear Gap:\\Partisan Cues and Evaluations of\\the Same Economic Information}
 \author{Carolyn E. Roush \and Gaurav Sood}
@@ -20,7 +21,7 @@
 \noindent Does giving people the same economic figures lead them to the same assessment? Two survey experiments present small declines in unemployment and inflation under either a Democratic President Obama cue or a Republican Congress cue. Respondents classify the changes as ``got better,'' ``stayed about the same,'' or ``got worse.'' People rated the same numerical changes less favorably when the question mentioned the opposing party. On a scale assigning these responses 100, 50, and 0, respectively, the unemployment and inflation effects are \MTurkunemploymentestimate{} and \MTurkinflationestimate{} points on MTurk and \Lucidunemploymentestimate{} and \Lucidinflationestimate{} points on Lucid. This shows that partisan context affects how people describe economic performance, but leaves open whether they see the changes differently or simply answer in ways that favor their party.
 \end{abstract}
 \vspace{1em}
-\noindent\small Replication materials: \url{https://github.com/soodoku/unclear_gap}. All estimates, tables, and figures are generated from the accompanying public extracts.\normalsize
+\noindent\small Replication materials: \url{https://github.com/finite-sample/unclear_gap}. All estimates, tables, and figures are generated from the accompanying public extracts.\normalsize
 \newpage
 \section{What a partisan gap can mean}
 When Democrats and Republicans give different answers to a question about the economy, the difference need not arise entirely from different factual beliefs. Respondents may disagree about what happened, how much the change matters, or which response best describes it. A question asking whether conditions ``got better'' leaves room for evaluation even when it supplies numerical information.
@@ -72,7 +73,7 @@ The two outcomes come from the same respondents and are analyzed separately. A s
 Table~\ref{tab:main} reports the main comparisons. On MTurk, the unemployment evaluation falls from \MTurkunemploymentinparty{} under the own-party cue to \MTurkunemploymentoutparty{} under the opposing-party cue: a difference of \MTurkunemploymentestimate{} points (95\% CI \MTurkunemploymentCI{}). The inflation difference is \MTurkinflationestimate{} points (\MTurkinflationCI{}). These are differences on the evaluation scale, not percentage-point changes in the probability of giving any particular answer.
 
 \begin{table}[htbp]
-\centering\small
+\centering\TableStyle
 \caption{Evaluations under own-party and opposing-party cues}\label{tab:main}
 \begin{tabular}{llrrrrl}\toprule
 Study & Outcome & $N$ & Own & Opposing & Difference & 95\% CI\\\midrule
@@ -88,7 +89,7 @@ The binary comparison makes the behavioral meaning of these differences easier t
 
 On Lucid, the corresponding differences are \Lucidunemploymentbetterestimate{} percentage points for unemployment (\LucidunemploymentbetterCI{}) and \Lucidinflationbetterestimate{} for inflation (\LucidinflationbetterCI{}). The uncertainty pattern resembles that for the score: the unemployment contrast on Lucid is less conclusive. The binary results show that the score differences are not merely an artifact of assigning equal distances to the three categories.
 
-\begin{table}[htbp]\centering\small
+\begin{table}[htbp]\centering\TableStyle
 \caption{Probability of selecting ``got better''}\label{tab:binary}
 \begin{tabular}{llrrl}\toprule
 Study & Outcome & Own (\%) & Opposing (\%) & Difference in pp [95\% CI]\\\midrule
@@ -119,7 +120,7 @@ Vague categories remain a plausible contributor. A decline can be numerically re
 \clearpage
 \appendix
 \section{Sample and party sensitivity}
-\begin{table}[htbp]\centering\small
+\begin{table}[htbp]\centering\TableStyle
 \caption{Cue effects across analytic samples}\label{tab:sensitivity}
 \begin{tabular}{lllrl}\toprule
 Study & Sample & Outcome & $N$ & Difference [95\% CI]\\\midrule
@@ -127,7 +128,7 @@ Study & Sample & Outcome & $N$ & Difference [95\% CI]\\\midrule
 \bottomrule\end{tabular}
 \par\smallskip\raggedright\footnotesize Evaluation-score points, opposing minus own. Full includes leaners; strict identifiers excludes them. The MTurk screen combines the supplied IP flag with post-experiment responses; the Lucid screen is an earlier instructed-response check. Each row uses that sample's party shares. These are overlapping samples, not independent replications.
 \end{table}
-\begin{table}[htbp]\centering\small
+\begin{table}[htbp]\centering\TableStyle
 \caption{Cue effects by respondent party}\label{tab:party}
 \begin{tabular}{lllrl}\toprule
 Study & Party & Outcome & $N$ & Difference [95\% CI]\\\midrule

@@ -28,15 +28,32 @@ make restore
 make check
 ```
 
-`make check` runs the analysis, generates figures, tables, manuscript numbers and this README, compiles `ms/main.pdf`, lints the R sources, and runs the analytical tests. To edit this README, change `docs/README.in.md`; `make tables` supplies its estimates.
+`make check` runs the analysis, generates figures, tables, manuscript numbers and this README, compiles `ms/main.pdf`, lints the R sources, and runs the analytical tests. To edit this README, change `docs/README.in.md`; `make analysis` supplies its estimates.
 
 - `data/raw/`: numeric public extracts used by the analysis.
 - `data/materials/`: plain-text fielded questionnaires and the Lucid demographic codebook.
-- `R/`, `scripts/`: shared definitions, analysis, and document generation.
+- `scripts/`: the numbered analysis pipeline described below.
+- `data/derived/`: generated, ignored intermediate data.
 - `tabs/`, `figs/`: generated estimates, diagnostics, tables, and figures.
 - `ms/main.tex`: manuscript source; `ms/references.bib`: references.
 - `tests/testthat/`: coding, estimand, variance, and regression checks.
 
-The public extracts omit direct identifiers and free text. Authorized holders can regenerate the extracts with `Rscript scripts/prepare_data.R /path/to/original/data`. Source hashes are recorded in `docs/source_manifest.csv`. See [data documentation](docs/data.md) for coding and provenance.
+### Script organization
+
+`make analysis` runs `scripts/99_run_all.R`, which loads the configuration and helpers, then runs stages 01–04 in order. Each stage has its own environment and passes results through files.
+
+| File | Purpose |
+|---|---|
+| `scripts/00_config.R` | Project paths, study names, plot colors, `theme_paper()`, figure dimensions, and `table_style`. |
+| `scripts/00_utils.R` | Reusable coding, estimation, and output functions used by the stages and tests. |
+| `scripts/01_prepare_data.R` | Validate and recode the public extracts into `data/derived/prepared_data.rds`. |
+| `scripts/02_estimate.R` | Read the prepared data and write estimates and diagnostics to `tabs/`. |
+| `scripts/03_figures.R` | Read the estimates and write the figure to `figs/`. |
+| `scripts/04_tables.R` | Generate table rows, manuscript numbers, table styling, and this README. |
+| `scripts/99_run_all.R` | Run the complete public analysis. |
+
+Plot and table defaults live together in `00_config.R`. The manuscript loads the generated `tabs/style.tex` and applies `\TableStyle` to each table. The optional importer below is separate from the public pipeline.
+
+The public extracts omit direct identifiers and free text. Authorized holders can regenerate the extracts with `Rscript R/01_prepare_public_data.R /path/to/original/data`. Source hashes are recorded in `docs/source_manifest.csv`. See [data documentation](docs/data.md) for coding and provenance.
 
 Citation metadata is in [CITATION.cff](CITATION.cff).

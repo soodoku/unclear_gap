@@ -1,15 +1,8 @@
-source("R/data.R")
-source("R/analysis.R")
-dir.create("tabs", showWarnings = FALSE)
-save_table <- function(x, name) {
-  write.csv(x, file.path("tabs", paste0(name, ".csv")),
-    row.names = FALSE, na = ""
-  )
-}
+prepared <- readRDS(prepared_data_file)
 results <- distributions <- flow <- cells <- list()
 diagnostics <- influence <- clusters <- balance <- retention <- list()
-for (study in c("MTurk", "Lucid")) {
-  raw <- read_data(study)
+for (study in studies) {
+  raw <- prepared[[study]]
   d <- raw[raw$eligible & raw$partisan, ]
   flow[[study]] <- data.frame(
     study = study,
@@ -108,4 +101,7 @@ print(subset(primary, party == "Pooled" & outcome %in% c(
   "unemployment", "inflation",
   "unemployment_better", "inflation_better"
 )), row.names = FALSE)
-writeLines(trimws(capture.output(sessionInfo()), which = "right"), "tabs/session_info.txt")
+writeLines(
+  trimws(capture.output(sessionInfo()), which = "right"),
+  file.path(table_dir, "session_info.txt")
+)

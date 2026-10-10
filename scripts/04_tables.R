@@ -1,6 +1,6 @@
-d <- read.csv("tabs/effects.csv")
-f <- read.csv("tabs/flow.csv")
-fmt <- function(x) formatC(x, digits = 1, format = "f")
+d <- read.csv(file.path(table_dir, "effects.csv"))
+f <- read.csv(file.path(table_dir, "flow.csv"))
+fmt <- function(x) formatC(x, digits = table_style$digits, format = "f")
 ci <- function(x) paste0("[", fmt(x$low), ", ", fmt(x$high), "]")
 macros <- character()
 for (study_name in c("MTurk", "Lucid")) {
@@ -34,7 +34,7 @@ for (study_name in c("MTurk", "Lucid")) {
     ))
   }
 }
-writeLines(macros, "tabs/macros.tex")
+writeLines(macros, file.path(table_dir, "macros.tex"))
 rows <- function(x, fields, path) {
   writeLines(apply(x[fields], 1, function(z) paste0(paste(z, collapse = " & "), " \\\\")), path)
 }
@@ -45,25 +45,28 @@ x <- subset(d, sample == "Full" & party == "Pooled" & outcome %in% c(
 x$item <- tools::toTitleCase(x$outcome)
 x$interval <- ci(x)
 for (v in c("estimate", "inparty", "outparty")) x[[v]] <- fmt(x[[v]])
-rows(x, c("study", "item", "n", "inparty", "outparty", "estimate", "interval"), "tabs/main.tex")
+rows(
+  x, c("study", "item", "n", "inparty", "outparty", "estimate", "interval"),
+  file.path(table_dir, "main.tex")
+)
 x <- subset(d, party == "Pooled" & outcome %in% c("unemployment", "inflation"))
 x$item <- tools::toTitleCase(x$outcome)
 x$effect <- paste0(fmt(x$estimate), " ", ci(x))
-rows(x, c("study", "sample", "item", "n", "effect"), "tabs/sensitivity.tex")
+rows(x, c("study", "sample", "item", "n", "effect"), file.path(table_dir, "sensitivity.tex"))
 x <- subset(d, sample == "Full" & party != "Pooled" & outcome %in% c(
   "unemployment",
   "inflation"
 ))
 x$item <- tools::toTitleCase(x$outcome)
 x$effect <- paste0(fmt(x$estimate), " ", ci(x))
-rows(x, c("study", "party", "item", "n", "effect"), "tabs/party.tex")
+rows(x, c("study", "party", "item", "n", "effect"), file.path(table_dir, "party.tex"))
 x <- subset(d, sample == "Full" & party == "Pooled" & grepl("_better", outcome))
 x$item <- tools::toTitleCase(sub("_better", "", x$outcome))
 x$effect <- paste0(fmt(x$estimate), " ", ci(x))
 x$inparty <- fmt(x$inparty)
 x$outparty <- fmt(x$outparty)
-rows(x, c("study", "item", "inparty", "outparty", "effect"), "tabs/binary.tex")
-lines <- readLines("docs/README.in.md")
+rows(x, c("study", "item", "inparty", "outparty", "effect"), file.path(table_dir, "binary.tex"))
+lines <- readLines(project_file("docs", "README.in.md"))
 for (study_name in c("MTurk", "Lucid")) {
   for (item in c("unemployment", "inflation")) {
     x <- subset(d, d$study == study_name & sample == "Full" & party == "Pooled" & outcome == item)
@@ -82,4 +85,10 @@ for (study_name in c("MTurk", "Lucid")) {
   )
 }
 stopifnot(!any(grepl("{{", lines, fixed = TRUE)))
-writeLines(lines, "README.md")
+writeLines(lines, project_file("README.md"))
+
+writeLines(paste0(
+  "\\newcommand{\\TableStyle}{\\", table_style$font_size,
+  "\\setlength{\\tabcolsep}{", table_style$column_padding,
+  "}\\renewcommand{\\arraystretch}{", table_style$row_stretch, "}}"
+), file.path(table_dir, "style.tex"))

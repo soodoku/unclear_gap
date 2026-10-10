@@ -1,10 +1,10 @@
 # Data and provenance
 
-The public CSV files contain numeric extracts of the original surveys. Each row preserves a source record; no rows are silently deduplicated. Empty CSV fields represent missing responses or questions not shown. In particular, arm-specific missing outcomes are structural: only the assigned arm's questions were shown. `R/data.R` checks routing and combines the assigned responses before assessing missingness.
+The public CSV files contain numeric extracts of the original surveys. Each row preserves a source record; no rows are silently deduplicated. Empty CSV fields represent missing responses or questions not shown. In particular, arm-specific missing outcomes are structural: only the assigned arm's questions were shown. `scripts/00_utils.R` checks routing and combines the assigned responses before assessing missingness.
 
 `row_id` is the source row number after removal of Lucid's two Qualtrics metadata rows. `ip_group` is a within-study integer identifying a shared original address; it is not an address, a cross-study identifier, or proof that records represent the same person. Direct identifiers, IP addresses, location fields, and free text are omitted from the public extracts. Complete originals, including Word questionnaires, remain in the author's local `private-data` archive. Git history has not been rewritten as part of this release.
 
-The extraction command is `Rscript scripts/prepare_data.R /path/to/original/data`. The folder must contain the three files named in `source_manifest.csv`. It verifies unique response IDs and the one-to-one MTurk join before dropping identifiers, checks agreement on party, treatment, and economic responses between the two MTurk sources, validates labels, and emits numeric-only extracts. It does not overwrite or edit the original files. The complete public analysis starts from these extracts and does not require private data.
+The extraction command is `Rscript R/01_prepare_public_data.R /path/to/original/data`. The folder must contain the three files named in `source_manifest.csv`. It verifies unique response IDs and the one-to-one MTurk join before dropping identifiers, checks agreement on party, treatment, and economic responses between the two MTurk sources, validates labels, and emits numeric-only extracts. It does not overwrite or edit the original files. The complete public analysis starts from these extracts and does not require private data.
 
 ## Sources
 
@@ -55,4 +55,4 @@ Partisans include respondents with `pid_dem` or `pid_rep` in 1–2 and independe
 
 ## Derived variables and outputs
 
-`R/data.R` defines eligibility, party, screen passing, own/opposing cue, scores, and category indicators. `scripts/run_all.R` writes `flow.csv`, cell counts and means, category distributions, all effect estimates, the primary family with adjusted p-values, and diagnostics. `effects.csv` includes overlapping sensitivity samples and should not be treated as a set of independent studies. `scripts/tables.R` and `scripts/figures.R` consume these outputs. `tabs/macros.tex` is the single source for empirical quantities repeated in the manuscript.
+`scripts/00_utils.R` defines eligibility, party, screen passing, own/opposing cue, scores, and category indicators. `scripts/02_estimate.R` writes `flow.csv`, cell counts and means, category distributions, all effect estimates, the primary family with adjusted p-values, and diagnostics. `effects.csv` includes overlapping sensitivity samples and should not be treated as a set of independent studies. `scripts/04_tables.R` and `scripts/03_figures.R` consume these outputs. `tabs/macros.tex` is the single source for empirical quantities repeated in the manuscript.

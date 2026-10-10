@@ -1,21 +1,15 @@
-.PHONY: restore analysis figures tables manuscript paper format lint test check clean
+.PHONY: restore analysis manuscript paper format lint test check clean
 
 restore:
 	Rscript --vanilla -e 'if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv", repos = "https://cloud.r-project.org"); renv::load(project = getwd()); renv::restore(prompt = FALSE)'
 
 analysis:
-	Rscript scripts/run_all.R
-
-figures: analysis
-	Rscript scripts/figures.R
-
-tables: analysis
-	Rscript scripts/tables.R
+	Rscript scripts/99_run_all.R
 
 manuscript:
 	cd ms && latexmk -xelatex -interaction=nonstopmode -halt-on-error main.tex
 
-paper: figures tables
+paper: analysis
 	$(MAKE) manuscript
 
 format:

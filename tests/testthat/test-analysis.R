@@ -1,6 +1,6 @@
 root <- normalizePath("../..")
-source(file.path(root, "R/data.R"))
-source(file.path(root, "R/analysis.R"))
+source(file.path(root, "scripts/00_config.R"))
+source(file.path(root, "scripts/00_utils.R"))
 mt <- read_data("MTurk", file.path(root, "data/raw"))
 lu <- read_data("Lucid", file.path(root, "data/raw"))
 m <- mt[mt$eligible & mt$partisan, ]

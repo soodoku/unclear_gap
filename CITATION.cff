@@ -7,8 +7,8 @@ authors:
     given-names: Carolyn E.
   - family-names: Sood
     given-names: Gaurav
-repository-code: "https://github.com/finite-sample/unclear_gap"
-url: "https://github.com/finite-sample/unclear_gap"
+repository-code: "https://github.com/finite-sample/know_pgap_cues"
+url: "https://github.com/finite-sample/know_pgap_cues"
 version: 0.1.0
 date-released: "2026-10-04"
 preferred-citation:
@@ -20,4 +20,4 @@ preferred-citation:
     - family-names: Sood
       given-names: Gaurav
   year: 2026
-  url: "https://github.com/finite-sample/unclear_gap/blob/main/ms/main.pdf"
+  url: "https://github.com/finite-sample/know_pgap_cues/blob/main/ms/main.pdf"

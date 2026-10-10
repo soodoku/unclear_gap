@@ -1,7 +1,7 @@
 Package: uncleargap
 Type: Project
 Title: An Unclear Gap: Partisan Cues and Evaluations of the Same Economic Information
-Version: 0.2.0
+Version: 0.2.1
 Authors@R: c(
     person("Carolyn E.", "Roush", role = "aut"),
     person("Gaurav", "Sood", role = c("aut", "cre"), email = "gsood07@gmail.com"))
